@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+:root{
+  --disabled-color: #007474;
+  --bg-color: #c0fafa;
+  --color: #00aaaa;
+  --hover-bg-color: #00b0b0;
+  --active-bg-color: #059f9f;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--color);
+}
+
+body > h1{
+  margin-block: 3rem 6rem;
+}
+
+.container{
+    width: 600px;
+}
+
+.playerDetail{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.live, .score{
+    margin-inline: 10px;
+}
+
+.colours {
+    background-color: #007474;
+    width: 700px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box{
+  padding: 40px 100px;
+  font-size: 1rem;
+  background-color: var(--color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+}
+
+.box:hover {
+  background-color: var(--hover-bg-color);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/clock.png" type="image/x-icon">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="con">
+      <h1 class="head">Clock</h1>
+      <div class="wallW">
+        <div class="smh">
+          <div class="seconds"><img src="images/Asset 2.svg" alt=""></div>
+          <div class="minuts"><img src="images/Asset 3.svg" alt=""></div>
+          <div class="hours"><img src="images/Asset 4.svg" alt=""></div>
+        </div>
+      </div>
+    
+      <div class="time">
+        <div class="f hour">
+          <h2 class="h"></h2>
+          <h2>:</h2>
+        </div>
+        <div class="f min">
+          <h2 class="m"></h2>
+          <h2>:</h2>
+        </div>
+        <div class="f sec">
+          <h2 class="s"></h2>
+        </div>
+        <div class="f apm">
+          <h2 class="ap">AM</h2>
+        </div>
+      </div>
+
+      <div class="ymd">
+        <div class="f date">
+          <h2 class="d"></h2>
+          <h2>:</h2>
+        </div>
+        <div class="f month">
+          <h2 class="mo"></h2>
+          <h2>:</h2>
+        </div>
+        <div class="f year">
+          <h2 class="y"></h2>
+        </div>
+      </div>
+      
+      <div class="alarm">
+        <p class="oo">Alarm</p>
+        <form class="timeForm" action="">
+          <!-- <button class="addAlarmBtn">Add Alarm</button> -->
+          <input type="time" class="setTimeAlarm" value="12:00" id="">
+          
+          <div class="switchBody">
+            <button type="button" class="switch"></button>
+          </div>
+
+          <!-- <button class="saveAlarm">Save</button> -->
+          <div class="closeAlarm"></div>
+        </form>
+
+
+        <!-- <div class="getAlarms">
+          
+        </div> -->
+
+      </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

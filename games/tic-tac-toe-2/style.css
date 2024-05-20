@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+:root{
+  --disabled-color: #007474;
+  --bg-color: #c0fafa;
+  --color: #00aaaa;
+  --hover-bg-color: #00b0b0;
+  --active-bg-color: #059f9f;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--color);
+}
+
+body > h1{
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col {
+  background-color: var(--color);
+  color: var(--disabled-color);
+  font-weight: 500;
+  width: 110px;
+  height: 110px;
+  margin: 5px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.col:hover {
+  background-color: var(--hover-bg-color);
+  box-shadow: 0 1px 3px #000000;
+}
+.col:active{
+  background-color: var(--active-bg-color);
+}
+
+.col.x:before,
+.col.o:before {
+  content: attr(data-value);
+  color: #333;
+  font-weight: bold;
+}
+
+.col.x:before {
+  content: 'X';
+}
+
+.col.o:before {
+  content: 'O';
+}
+
+.winner {
+  position: absolute;
+  align-items: center;
+  background-color: #000000c0;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, -100%);
+  font-size: 1.5rem;
+}
+.winner h2{
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn{
+  padding: 4px 10px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  background-color: var(--color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+}
+
+.btn:hover {
+  background-color: var(--hover-bg-color);
+}
+
+.features{
+  display: flex;
+  gap: 20px;
+}

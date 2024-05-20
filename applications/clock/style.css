@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #e7e7e7;
+}
+.con {
+  margin: auto;
+  max-width: 500px;
+  height: calc(100vh - 220px);
+}
+.head {
+  color: #070707;
+  padding-block: 25px;
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 8px;
+}
+.time,
+.ymd {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-inline: auto;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: #070707;
+  width: 400px;
+}
+.ap {
+  padding-left: 10px;
+}
+h2 {
+  padding: 5px;
+  color: #32cd32;
+  font-weight: 500;
+  text-shadow: 1px 3px 3px #1e7a1e;
+}
+.f {
+  display: flex;
+}
+
+.wallW {
+  font-family: sysm-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
+  margin-inline: auto;
+  margin-bottom: 25px;
+  background-color: #1e7a1e;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: url(images/34139.svg) no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smh {
+  width: 9px;
+}
+.seconds {
+  position: relative;
+  padding-top: 3px;
+  top: 259.5px;
+  z-index: 3;
+}
+.minuts {
+  position: relative;
+  top: -3px;
+  z-index: 2;
+}
+.hours {
+  position: relative;
+  top: -259.5px;
+  left: 1.5px;
+  z-index: 1;
+}
+
+/* add alarm */
+.alarm{
+    background-color: #ffffff;
+    border: 2px solid #07070729;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding-bottom: 18px;
+}
+
+.oo{
+    color: #d59e13;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.sa, .saveAlarm, .setTimeAlarm, .addAlarmBtn{
+    text-align: center;
+    width: 400px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #141414;
+    color: #ececec;
+    margin-top: 10px;
+    outline: none;
+}
+.setTimeAlarm{
+  z-index: 2;
+}
+.addAlarmBtn:hover{
+    border: 2px solid #d59e13be;
+}
+.addAlarmBtn:active{
+    font-size: 1.2rem;
+    padding: 11px;
+}
+
+.setTimeAlarm:hover{
+    background-color: #070707e6;
+}
+
+.switchBody{
+    width: 50px;
+    height: 20px;
+    /* background-color: #3c3c3c; */
+    /* background-color: #76a762; */
+    position: relative;
+    left: 380px;
+    top: -35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 3;
+}
+.switch{
+    width: 25px;
+    height: 25px;
+    background-color: #f5f5f5;
+    border: #f5f5f5;
+    border-radius: 50%;
+    margin: 2px;
+    outline: none;
+    z-index: 2;
+}
+
+.switch input {
+    display: none;
+}
+@media screen and (max-width: 500px) {
+  .switchBody{
+    left: 350px;
+    top: -20;
+  }
+}
+@media screen and (max-width: 420px) {
+  .switchBody{
+    left: 300px;
+    top: -20;
+  }
+  .time, .ymd, .sa, .saveAlarm, .setTimeAlarm, .addAlarmBtn{
+    width: 370px;
+  }
+}
